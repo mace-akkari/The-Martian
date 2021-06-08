@@ -39,3 +39,10 @@ html {
 .circle:hover{
   background: rgba(155, 152, 136, 0.76);
 }
+
+
+
+
+footer {
+  font-size: larger;  
+}

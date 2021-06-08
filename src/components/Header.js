@@ -1,4 +1,4 @@
-export function Header() {
+export const Header = () => {
   return (
     <div>
       <h1>The Martian</h1>

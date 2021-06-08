@@ -1,9 +1,7 @@
 export const Screen1 = () => {
-
-  const name = "Watney"
+  const name = "Watney";
 
   return (
-    
     <div>
       <form>
         <label>

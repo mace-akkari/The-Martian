@@ -28,11 +28,9 @@ export const Buttons = () => {
     };
 
     return (
-        <div className="round">
             <div className="ciclegraph" ref={graph}>
                 {hex()}
             </div>
-        </div>
     )
 };
 

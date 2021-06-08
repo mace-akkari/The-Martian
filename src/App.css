@@ -18,7 +18,7 @@ html {
   margin: calc(100px / 2 + 0px);
 }
 
-.ciclegraph:before {
+/* .ciclegraph:before {
   content: "";
   position: absolute;
   top: 0;
@@ -27,7 +27,7 @@ html {
   width: calc(100% - 2px * 2);
   height: calc(100% - 2px * 2);
   border-radius: 50%;
-}
+} */
 
 .ciclegraph .circle {
   position: absolute;
@@ -38,4 +38,8 @@ html {
   margin: calc(-100px / 2);
   background: rgba(255, 219, 17, 0.76);
   border-radius: 50%;
+}
+
+.circle:hover{
+  background: rgba(155, 152, 136, 0.76);
 }

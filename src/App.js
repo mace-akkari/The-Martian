@@ -5,6 +5,8 @@ import { Buttons } from "./components/HexButtons";
 import { Screen1 } from "./components/MarksScreen"
 import { Screen2 } from "./components/HexCodeScreen"
 import { Footer } from "./components/Footer";
+import { MainScreen } from "./components/SharedScreen";
+
 
 
 function Rover() {
@@ -13,6 +15,7 @@ function Rover() {
       <Header />
       <Screen1 />
       <Screen2 />
+      <MainScreen />
       <Buttons />
       <Footer />
       

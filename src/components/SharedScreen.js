@@ -1,4 +1,4 @@
-export const MainScreen = () => {
+export const SharedScreen = () => {
   return (
     <div>
       <form>

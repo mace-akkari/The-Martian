@@ -1,4 +1,4 @@
-export const Screen1 = () => {
+export const MarksScreen = () => {
   const name = "Watney";
 
   return (

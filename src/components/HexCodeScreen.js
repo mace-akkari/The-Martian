@@ -1,4 +1,4 @@
-export const Screen2 = (props) => {
+export const HexCodeScreen = (props) => {
   const { hex } = props;
   return (
     <div>

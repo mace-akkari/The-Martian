@@ -1,6 +1,6 @@
 export const SharedScreen = () => {
   return (
-    <div>
+    <div className="sharedScreen">
       <form>
         <label>
           Comunications Screen

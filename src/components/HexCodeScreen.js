@@ -1,7 +1,7 @@
 export const HexCodeScreen = (props) => {
   const { hex } = props;
   return (
-    <div>
+    <div className="hexCodeScreen"> 
       <form>
         <label>
           Hex Code:

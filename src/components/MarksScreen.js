@@ -2,7 +2,7 @@ export const MarksScreen = () => {
   const name = "Watney";
 
   return (
-    <div>
+    <div className="marksScreen">
       <form>
         <label>
           Astronaut {name}:

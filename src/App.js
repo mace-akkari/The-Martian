@@ -14,9 +14,9 @@ function Rover() {
     <div className="App">
       <Header />
       <Screen1 />
-      <Screen2 />
+      <Screen2 hex={state.hex} />
       <MainScreen />
-      <Buttons clickHandler={handler}/>
+      <Buttons clickHandler={handler} />
       <Footer />
     </div>
   );

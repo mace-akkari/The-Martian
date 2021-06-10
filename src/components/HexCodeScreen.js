@@ -1,10 +1,11 @@
-export const Screen2 = () => {
+export const Screen2 = (props) => {
+  const { hex } = props;
   return (
     <div>
       <form>
         <label>
           Hex Code:
-          <input type="text" />{" "}
+          <input type="text" value={hex} />{" "}
         </label>
         <input type="submit" value="Convert" />
       </form>

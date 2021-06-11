@@ -8,7 +8,7 @@ export const Buttons = (props) => {
     const ciclegraph = graph.current;
     const circleElements = ciclegraph.childNodes;
 
-    let angle = 360 - 90;
+    let angle = 360 - 115;
     let dangle = 360 / circleElements.length;
 
     for (let i = 0; i < circleElements.length; i++) {

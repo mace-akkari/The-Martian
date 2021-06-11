@@ -2,11 +2,11 @@ export const MarksScreen = () => {
   const name = "Watney";
 
   return (
-    <div className="marksScreen">
+    <div className="screens">
       <form>
         <label>
-          Astronaut {name}:
-          <input type="text" />{" "}
+          Astronaut {name}
+          <input className="displayScreen" type="text" />{" "}
         </label>
         <input type="submit" value="Send Message" />
       </form>

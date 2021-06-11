@@ -1,10 +1,10 @@
 export const SharedScreen = () => {
   return (
-    <div className="sharedScreen">
+    <div className="screens">
       <form>
         <label>
           Comunications Screen
-          <input type="text" />{" "}
+          <input className="displayScreen" type="text" />{" "}
         </label>
         <input type="reset" defaultValue="Reset" />
       </form>

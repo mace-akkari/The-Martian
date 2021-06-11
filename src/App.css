@@ -62,7 +62,9 @@ html {
 
 .screens{
   margin: auto;
-  border: 2px solid rgba(148, 143, 140, 0.856);;
+  border: 2px solid rgba(148, 143, 140);
+  background-color: rgba(172, 99, 51, 0.856);
+  padding: 2%;
 }
 
 form {
@@ -81,12 +83,10 @@ label input {
   margin: auto;
 }
 
-.ciclegraph {
+.ciclegraph{
   grid-column: 2 / 3;
   grid-row: 2 / 5;
   position: relative;
-  width: 87%;
-  margin: calc(100px / 2 + 0px);
 }
 
 .ciclegraph .circle {

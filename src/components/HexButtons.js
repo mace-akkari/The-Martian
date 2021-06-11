@@ -37,15 +37,3 @@ export const Buttons = (props) => {
     </div>
   );
 };
-
-//   export function Buttons() {
-//     const hex = () => {
-//        let hexCode = ["0123456789ABCDEF"]
-//        hexCode.forEach(value => { <button>{value}</button>})
-//      };
-//      return (
-//          <div>
-//              {hex()}
-//          </div>
-//      )
-//  };

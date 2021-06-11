@@ -60,6 +60,27 @@ html {
   grid-row: 4 / 5;
 }
 
+.screens{
+  margin: auto;
+  border: 2px solid rgba(148, 143, 140, 0.856);;
+}
+
+form {
+  margin: auto;
+}
+
+label input {
+  margin: auto;
+  display:block;
+  align-items: center;
+}
+
+.displayScreen {
+  width: 300px;
+  height: 100px;
+  margin: auto;
+}
+
 .ciclegraph {
   grid-column: 2 / 3;
   grid-row: 2 / 5;

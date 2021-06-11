@@ -15,7 +15,7 @@ export const Buttons = (props) => {
       let circle = circleElements[i];
       angle += dangle;
       circle.style.transform = `rotate(${angle}deg) translate(${
-        ciclegraph.clientWidth / 2
+        ciclegraph.clientWidth / 3
       }px) rotate(-${angle}deg)`;
     }
   }, []);

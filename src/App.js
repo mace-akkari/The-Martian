@@ -10,12 +10,14 @@ import { SharedScreen } from "./components/SharedScreen";
 function Rover() {
   const [state, setState] = useState({ hex: "", message: "" });
   const handler = (value) => setState({ hex: state.hex + value});
+  const [charMessage, setCharMessage] = useState({ message: "" });
+  const messageHandler = (aMsg) => setCharMessage({ message: charMessage.message + aMsg})
   return (
     <div className="App">
       <Header />
-      <MarksScreen />
+      <MarksScreen clickHandler={messageHandler} />
       <HexCodeScreen hex={state.hex} />
-      <SharedScreen />
+      <SharedScreen name={charMessage.message} />
       <Buttons clickHandler={handler} />
       <Footer />
     </div>

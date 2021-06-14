@@ -7,21 +7,23 @@ import { HexCodeScreen } from "./components/HexCodeScreen";
 import { Footer } from "./components/Footer";
 import { SharedScreen } from "./components/SharedScreen";
 
-function Rover() {
+function App() {
   const [state, setState] = useState({ hex: "", message: "" });
+  const [charMessage, setCharMessage] = useState({user: '', message: ''});
   const handler = (value) => setState({ hex: state.hex + value});
-  const [charMessage, setCharMessage] = useState({ message: "" });
-  const messageHandler = (aMsg) => setCharMessage({ message: charMessage.message + aMsg})
+
   return (
     <div className="App">
       <Header />
-      <MarksScreen clickHandler={messageHandler} />
+      <MarksScreen
+        setCharMessage={setCharMessage}
+      />
       <HexCodeScreen hex={state.hex} />
-      <SharedScreen name={charMessage.message} />
+      <SharedScreen communication={charMessage} />
       <Buttons clickHandler={handler} />
       <Footer />
     </div>
   );
 }
 
-export default Rover;
+export default App;

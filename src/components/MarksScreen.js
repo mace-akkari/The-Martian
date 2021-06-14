@@ -1,20 +1,23 @@
-export const MarksScreen = (props) => {
+export const MarksScreen = ({ setCharMessage }) => {
   const name = "Watney";
-  const { clickHandler } = props;
 
-  const onSubmit = (aMsg) => {
-  console.log(aMsg);
-  clickHandler(aMsg);
-} 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    setCharMessage({
+      user: name,
+      message: event.target[0].value
+    });
+  };
 
   return (
     <div className="screens">
-      <form onSubmit={() => clickHandler(onSubmit)}>
+      <form onSubmit={(event) => handleSubmit(event)}>
         <label>
           Astronaut {name}
-          <input className="displayScreen" type="text" />{" "}
+          <input className="displayScreen" type="text" />
         </label>
-        <input type="submit" value="Send Message"/>
+        <button type="submit" value="Send Message" />
       </form>
     </div>
   );

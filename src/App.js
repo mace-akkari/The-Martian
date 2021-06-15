@@ -9,15 +9,14 @@ import { SharedScreen } from "./components/SharedScreen";
 
 function App() {
   const [state, setState] = useState({ hex: "", message: "" });
-  const [charMessage, setCharMessage] = useState({user: '', message: ''});
   const handler = (value) => setState({ hex: state.hex + value});
+
+  const [charMessage, setCharMessage] = useState({user: '', message: ''});
 
   return (
     <div className="App">
       <Header />
-      <MarksScreen
-        setCharMessage={setCharMessage}
-      />
+      <MarksScreen setCharMessage={setCharMessage} />
       <HexCodeScreen hex={state.hex} />
       <SharedScreen communication={charMessage} />
       <Buttons clickHandler={handler} />

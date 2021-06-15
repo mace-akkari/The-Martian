@@ -1,5 +1,5 @@
 export const SharedScreen = ({ communication }) => {
-  const { user, message } = communication;
+  const { user, message, nasaUser, nasaMessage } = communication; 
 
   return (
     <div className="screens">
@@ -10,6 +10,7 @@ export const SharedScreen = ({ communication }) => {
             className="displayScreen"
             type="text"
             value={`${user}: ${message}`}
+            value={`${nasaUser}: ${nasaMessage}`}
           />
         </label>
         <input type="reset" defaultValue="Reset" />

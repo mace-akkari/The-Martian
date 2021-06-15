@@ -17,7 +17,7 @@ export const MarksScreen = ({ setCharMessage }) => {
           Astronaut {name}
           <input className="displayScreen" type="text" />
         </label>
-        <button type="submit" value="Send Message" />
+        <input type="submit" value="Send Message" />
       </form>
     </div>
   );

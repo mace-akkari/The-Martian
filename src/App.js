@@ -11,7 +11,7 @@ function App() {
   const [state, setState] = useState({ hex: "", message: "" });
   const handler = (value) => setState({ hex: state.hex + value});
 
-  const [charMessage, setCharMessage] = useState({user: "", message: ""});
+  const [charMessage, setCharMessage] = useState({astroUser: "", astroMessage: ""});
   
   const [hexMessage, setHexMessage] = useState({nasaUser: "", nasaMessage: "" })
 
@@ -20,7 +20,7 @@ function App() {
       <Header />
       <MarksScreen setCharMessage={setCharMessage} />
       <HexCodeScreen hex={state.hex} setHexMessage={setHexMessage} />
-      <SharedScreen communication={charMessage} communication={hexMessage}/>
+      <SharedScreen astroCommunication={charMessage} nasaCommunication={hexMessage} />
       <Buttons clickHandler={handler} />
       <Footer />
     </div>

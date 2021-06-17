@@ -71,12 +71,15 @@ form {
   margin: auto;
 }
 
-label input {
+label textarea {
   margin: auto;
   display:block;
   align-items: center;
 }
 
+textarea {
+  resize: none
+}
 .displayScreen {
   width: 300px;
   height: 100px;

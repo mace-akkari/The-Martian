@@ -6,7 +6,7 @@ export const SharedScreen = ({ communication }) => {
       <form>
         <label>
           Comunications Screen
-          <input
+          <textarea
             className="displayScreen"
             type="text"
             value={`${user}: ${message}`}

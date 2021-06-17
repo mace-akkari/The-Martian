@@ -15,7 +15,7 @@ export const MarksScreen = ({ setCharMessage }) => {
       <form onSubmit={(event) => handleSubmit(event)}>
         <label>
           Astronaut {name}
-          <input className="displayScreen" type="text" />
+          <textarea className="displayScreen" type="text" />
         </label>
         <input type="submit" value="Send Message" />
       </form>

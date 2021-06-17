@@ -5,7 +5,7 @@ export const HexCodeScreen = (props) => {
       <form>
         <label>
           Hex Code
-          <input className="displayScreen" type="text" value={hex} />{" "}
+          <textarea className="displayScreen" type="text" value={hex} />{" "}
         </label>
         <input type="submit" value="Convert" />
       </form>

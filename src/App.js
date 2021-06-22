@@ -12,11 +12,17 @@ function App() {
   const handler = (value) => setState({ hex: state.hex + value});
 
   const [charMessage, setCharMessage] = useState({user: '', message: ''});
+  const screenSubmitHandler = (name, message) => {
+    setCharMessage({
+      user: name,
+      message,
+    })
+  }
 
   return (
     <div className="App">
       <Header />
-      <MarksScreen setCharMessage={setCharMessage} />
+      <MarksScreen setCharMessage={screenSubmitHandler} />
       <HexCodeScreen hex={state.hex} />
       <SharedScreen communication={charMessage} />
       <Buttons clickHandler={handler} />

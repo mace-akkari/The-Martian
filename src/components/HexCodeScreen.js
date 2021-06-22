@@ -19,7 +19,7 @@ export const HexCodeScreen = (props) => {
     event.stopPropagation();
     setHexMessage({
       nasaUser: name,
-      nasaMessage: hexToString(event.target.value)
+      nasaMessage: hexToString(event.target.value),
     });
   };
 

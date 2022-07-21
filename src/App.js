@@ -2,35 +2,31 @@ import React, { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
 import { Buttons } from "./components/HexButtons";
-import { MarksScreen } from "./components/MarksScreen";
+import { MissonControl } from "./components/MissonControl";
 import { HexCodeScreen } from "./components/HexCodeScreen";
 import { Footer } from "./components/Footer";
 import { SharedScreen } from "./components/SharedScreen";
 
+const stringToHex = (str) => {
+  return str
+    .split("")
+    .map((char) => char.charCodeAt(0))
+    .map((dec) => dec.toString(16));
+};
+
 function App() {
-  const [state, setState] = useState({ hex: "", message: "" });
-  const handler = (value) => setState({ hex: state.hex + value});
-
-  const [charMessage, setCharMessage] = useState({user: '', message: ''});
-  const screenSubmitHandler = (name, message) => {
-    setCharMessage({
-      user: name,
-      message,
-    })
-  }
-
-  const [hexMessage, setHexMessage] = useState ({
-    nasaUser: "",
-    nasaMessage: "",
-  })
-
+  const [charMessage, setCharMessage] = useState("");
+  const [hexMessage, setHexMessage] = useState("");
+  const hexHandler = (message) => {
+    setHexMessage(stringToHex(message).join(""));
+  };
   return (
     <div className="App">
       <Header />
-      <MarksScreen setCharMessage={screenSubmitHandler} />
-      <HexCodeScreen hex={state.hex} setHexMessage={setHexMessage} />
-      <SharedScreen communication={charMessage} communication={setHexMessage}/>
-      <Buttons clickHandler={handler} />
+      <MissonControl setHexMessage={hexHandler} />
+      <HexCodeScreen hex={hexMessage} />
+      <SharedScreen communication={charMessage} />
+      <Buttons clickHandler={() => {}} />
       <Footer />
     </div>
   );

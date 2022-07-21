@@ -1,6 +1,4 @@
 export const SharedScreen = ({ communication }) => {
-  const { user, message } = communication;
-
   return (
     <div className="screens">
       <form>
@@ -9,10 +7,9 @@ export const SharedScreen = ({ communication }) => {
           <textarea
             className="displayScreen"
             type="text"
-            value={`${user}: ${message}`}
+            value={`${communication}`}
           />
         </label>
-        <input type="reset" defaultValue="Reset" />
       </form>
     </div>
   );

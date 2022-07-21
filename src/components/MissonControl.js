@@ -1,20 +1,15 @@
-export const MarksScreen = ({ setCharMessage }) => {
-  const name = "Watney";
-
+export const MissonControl = ({ setHexMessage }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    setCharMessage({
-      user: name,
-      message: event.target[0].value
-    });
+    setHexMessage(event.target[0].value);
   };
 
   return (
     <div className="screens">
       <form onSubmit={(event) => handleSubmit(event)}>
         <label>
-          Astronaut {name}
+          Mission Control
           <textarea className="displayScreen" type="text" />
         </label>
         <input type="submit" value="Send Message" />

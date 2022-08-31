@@ -14,3 +14,6 @@ export const SharedScreen = ({ communication }) => {
     </div>
   );
 };
+
+// change hexToString so it can handle invalid hex, if starment %2 return
+// error msg if not paired yet - defult msg

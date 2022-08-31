@@ -14,18 +14,34 @@ const stringToHex = (str) => {
     .map((dec) => dec.toString(16));
 };
 
+const hexToString = (hex) => {
+  //
+  return hex
+    .split("")
+    .flatMap((el, i, arr) => {
+      const pair = [];
+      if (i % 2 === 0) {
+        pair.push(el + arr[i + 1]);
+      }
+      return pair;
+    })
+    .map((pair) => parseInt(pair, 16))
+    .map((ascii) => String.fromCharCode(ascii))
+    .join("");
+};
+
 function App() {
-  const [charMessage, setCharMessage] = useState("");
   const [hexMessage, setHexMessage] = useState("");
   const hexHandler = (message) => {
     setHexMessage(stringToHex(message).join(""));
   };
+
   return (
     <div className="App">
       <Header />
       <MissonControl setHexMessage={hexHandler} />
       <HexCodeScreen hex={hexMessage} />
-      <SharedScreen communication={charMessage} />
+      <SharedScreen communication={hexToString(hexMessage)} />
       <Buttons clickHandler={() => {}} />
       <Footer />
     </div>

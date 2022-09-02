@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-export const Buttons = (props) => {
-  const { clickHandler } = props;
+export const Buttons = ({ clickHandler }) => {
   const graph = useRef(null);
 
   useEffect(() => {
@@ -21,10 +20,32 @@ export const Buttons = (props) => {
   }, []);
 
   const hex = () => {
-  const hexCode = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    const hexCode = [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      "A",
+      "B",
+      "C",
+      "D",
+      "E",
+      "F",
+    ];
     return hexCode.map((value, index) => {
       return (
-        <button key={index} className="circle" value={value} onClick={() => clickHandler(value)}>
+        <button
+          key={index}
+          className="circle"
+          value={value}
+          onClick={() => clickHandler(value)}
+        >
           {value}
         </button>
       );

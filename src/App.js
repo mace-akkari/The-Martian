@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./App.css";
 import { Header } from "./components/Header";
-import { Buttons } from "./components/HexButtons";
+import Buttons from "./components/HexButtons";
 import { MissonControl } from "./components/MissonControl";
 import { HexCodeScreen } from "./components/HexCodeScreen";
 import { Footer } from "./components/Footer";
@@ -35,6 +35,9 @@ function App() {
   const hexHandler = (message) => {
     setHexMessage(stringToHex(message).join(""));
   };
+  const handler = (value) => {
+    setHexMessage(`${hexMessage}${value}`);
+  };
 
   return (
     <div className="App">
@@ -42,7 +45,7 @@ function App() {
       <MissonControl setHexMessage={hexHandler} />
       <HexCodeScreen hex={hexMessage} />
       <SharedScreen communication={hexToString(hexMessage)} />
-      <Buttons clickHandler={() => {}} />
+      <Buttons clickHandler={handler} />
       <Footer />
     </div>
   );

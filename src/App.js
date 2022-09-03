@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./App.css";
-import { Header } from "./components/Header";
+import Header from "./components/Header";
 import Buttons from "./components/HexButtons";
-import { MissonControl } from "./components/MissonControl";
-import { HexCodeScreen } from "./components/HexCodeScreen";
-import { Footer } from "./components/Footer";
-import { SharedScreen } from "./components/SharedScreen";
+import MissonControl from "./components/MissonControl";
+import HexCodeScreen from "./components/HexCodeScreen";
+import Footer from "./components/Footer";
+import SharedScreen from "./components/SharedScreen";
 
 const stringToHex = (str) => {
   return str

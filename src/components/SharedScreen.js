@@ -1,4 +1,4 @@
-export const SharedScreen = ({ communication }) => {
+const SharedScreen = ({ communication }) => {
   return (
     <div className="screens">
       <form>
@@ -14,6 +14,8 @@ export const SharedScreen = ({ communication }) => {
     </div>
   );
 };
+
+export default SharedScreen;
 
 // change hexToString so it can handle invalid hex, if starment %2 return
 // error msg if not paired yet - defult msg

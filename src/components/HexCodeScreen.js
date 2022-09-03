@@ -9,8 +9,7 @@
 
 //   return message;
 // };
-
-export const HexCodeScreen = ({ hex }) => {
+const HexCodeScreen = ({ hex }) => {
   return (
     <div className="screens">
       <label>
@@ -20,3 +19,4 @@ export const HexCodeScreen = ({ hex }) => {
     </div>
   );
 };
+export default HexCodeScreen;

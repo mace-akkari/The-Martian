@@ -1,4 +1,4 @@
-export const MissonControl = ({ setHexMessage }) => {
+const MissonControl = ({ setHexMessage }) => {
   const handleSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
@@ -17,3 +17,5 @@ export const MissonControl = ({ setHexMessage }) => {
     </div>
   );
 };
+
+export default MissonControl;

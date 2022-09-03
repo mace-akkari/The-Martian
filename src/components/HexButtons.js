@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from "react";
 
-export const Buttons = ({ clickHandler }) => {
+const Buttons = ({ clickHandler }) => {
   const graph = useRef(null);
 
   useEffect(() => {
@@ -58,3 +58,5 @@ export const Buttons = ({ clickHandler }) => {
     </div>
   );
 };
+
+export default Buttons;

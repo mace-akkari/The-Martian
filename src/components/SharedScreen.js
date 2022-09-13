@@ -1,4 +1,6 @@
 const SharedScreen = ({ communication }) => {
+  const loadingMessage = "please wait, still loading...";
+
   return (
     <div className="screens">
       <form>
@@ -7,7 +9,7 @@ const SharedScreen = ({ communication }) => {
           <textarea
             className="displayScreen"
             type="text"
-            value={`${communication}`}
+            value={`${communication ?? loadingMessage}`}
           />
         </label>
       </form>
@@ -16,6 +18,3 @@ const SharedScreen = ({ communication }) => {
 };
 
 export default SharedScreen;
-
-// change hexToString so it can handle invalid hex, if starment %2 return
-// error msg if not paired yet - defult msg

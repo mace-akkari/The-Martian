@@ -15,19 +15,22 @@ const stringToHex = (str) => {
 };
 
 const hexToString = (hex) => {
-  //
-  return hex
-    .split("")
-    .flatMap((el, i, arr) => {
-      const pair = [];
-      if (i % 2 === 0) {
-        pair.push(el + arr[i + 1]);
-      }
-      return pair;
-    })
-    .map((pair) => parseInt(pair, 16))
-    .map((ascii) => String.fromCharCode(ascii))
-    .join("");
+  if (hex.length % 2 !== 0) {
+    return null;
+  } else {
+    return hex
+      .split("")
+      .flatMap((el, i, arr) => {
+        const pair = [];
+        if (i % 2 === 0) {
+          pair.push(el + arr[i + 1]);
+        }
+        return pair;
+      })
+      .map((pair) => parseInt(pair, 16))
+      .map((ascii) => String.fromCharCode(ascii))
+      .join("");
+  }
 };
 
 function App() {

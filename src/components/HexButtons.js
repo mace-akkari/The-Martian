@@ -14,7 +14,7 @@ const Buttons = ({ clickHandler }) => {
       let circle = circleElements[i];
       angle += dangle;
       circle.style.transform = `rotate(${angle}deg) translate(${
-        ciclegraph.clientWidth / 3
+        ciclegraph.clientWidth / 3.5
       }px) rotate(-${angle}deg)`;
     }
   }, []);

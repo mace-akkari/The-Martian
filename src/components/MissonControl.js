@@ -1,8 +1,19 @@
+import { createRef } from "react";
+
 const MissonControl = ({ setHexMessage }) => {
+  const newRef = createRef();
+
   const handleSubmit = (event) => {
     event.preventDefault();
     event.stopPropagation();
     setHexMessage(event.target[0].value);
+  };
+
+  const handleDelete = (event) => {
+    event.preventDefault();
+    event.stopPropagation();
+    // document.getElementById("textArea").value = "";
+    newRef.current.value = "";
   };
 
   return (
@@ -10,9 +21,14 @@ const MissonControl = ({ setHexMessage }) => {
       <form onSubmit={(event) => handleSubmit(event)}>
         <label>
           Mission Control
-          <textarea className="displayScreen" type="text" />
+          <textarea ref={newRef} className="displayScreen" type="text" />
         </label>
         <input type="submit" value="Send Message" />
+        <input
+          onClick={(event) => handleDelete(event)}
+          type="button"
+          value="Clear Message"
+        />
       </form>
     </div>
   );

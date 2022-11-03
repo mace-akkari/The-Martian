@@ -28,7 +28,7 @@ const MissonControl = ({ setHexMessage }) => {
         <input
           onClick={(event) => handleDelete(event)}
           type="button"
-          value="Clear Message"
+          value="Clear Screen"
         />
       </form>
     </div>

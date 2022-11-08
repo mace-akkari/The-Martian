@@ -46,7 +46,7 @@ function App() {
     <div className="App">
       <Header />
       <MissonControl setHexMessage={hexHandler} />
-      <HexCodeScreen hex={hexMessage} comms={hexHandler} />
+      <HexCodeScreen hex={hexMessage} hexMessageHandler={setHexMessage} />
       <SharedScreen communication={hexToString(hexMessage)} />
       <Buttons clickHandler={handler} />
       <Footer />

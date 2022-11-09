@@ -28,6 +28,7 @@ const HexCodeScreen = ({ hex, hexMessageHandler }) => {
         <textarea className="displayScreen" type="text" value={hex} />{" "}
       </label>
       <input
+        className="first_input"
         onClick={(event) => handleClear(event)}
         type="button"
         value="Clear Screen"

@@ -24,7 +24,7 @@ const MissonControl = ({ setHexMessage }) => {
           Mission Control
           <textarea ref={newRef} className="displayScreen" type="text" />
         </label>
-        <input type="submit" value="Send Message" />
+        <input className="first_input" type="submit" value="Send Message" />
         <input
           onClick={(event) => handleDelete(event)}
           type="button"

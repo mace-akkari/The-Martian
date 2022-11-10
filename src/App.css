@@ -16,7 +16,7 @@ html {
   height: 100vh;
 }
 
-.header{
+.header {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   color: rgb(255, 255, 255);
@@ -45,27 +45,31 @@ html {
   font-size: small;
 }
 
-
-.marksScreen{
+.marksScreen {
   grid-column: 1 / 2;
   grid-row: 2 / 3;
 }
 
-.hexCodeScreen{
+.hexCodeScreen {
   grid-column: 1 / 2;
   grid-row: 3 / 4;
 }
 
-.sharedScreen{
+.sharedScreen {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
 }
 
-.screens{
+.screens {
   margin: auto;
   border: 2px solid rgba(148, 143, 140);
   background-color: rgba(172, 99, 51, 0.856);
   padding: 2%;
+  font-weight: 600;
+}
+
+.screens input {
+  font-weight: 600;
 }
 
 form {
@@ -78,6 +82,7 @@ label textarea {
   align-items: center;
 }
 
+
 textarea {
   resize: none
 }
@@ -85,7 +90,7 @@ textarea {
   width: 300px;
   height: 100px;
   margin: auto;
-  margin-bottom: 11px;
+  margin: 11px 1px;
 }
 
 .first_input {

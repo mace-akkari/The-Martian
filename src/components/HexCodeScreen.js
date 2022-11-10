@@ -24,7 +24,7 @@ const HexCodeScreen = ({ hex, hexMessageHandler }) => {
   return (
     <div className="screens">
       <label>
-        Hex Code
+        Hex Code Screen
         <textarea className="displayScreen" type="text" value={hex} />{" "}
       </label>
       <input

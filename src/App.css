@@ -41,7 +41,8 @@ html {
   position: absolute;
   transform: rotate(-90deg);
   top: 33%;
-  left: 785px;
+  left: 625px; /* for vercel */
+  /* left: 785px;  for local host*/
   font-size: small;
 }
 

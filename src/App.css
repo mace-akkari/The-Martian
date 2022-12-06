@@ -1,6 +1,7 @@
 * {
 box-sizing: border-box;
 margin: 0;
+font-family: 'Knewave';
 }
 
 html {
@@ -41,8 +42,7 @@ html {
   position: absolute;
   transform: rotate(-90deg);
   top: 33%;
-  left: 625px; /* for vercel */
-  /* left: 785px;  for local host*/
+  left: 785px;
   font-size: small;
 }
 
@@ -92,6 +92,7 @@ textarea {
   height: 100px;
   margin: auto;
   margin: 11px 1px;
+  font-size: 20px;
 }
 
 .first_input {

@@ -1,3 +1,5 @@
+import React from "react";
+
 const SharedScreen = ({ communication }) => {
   const loadingMessage = "please wait, still loading...";
 

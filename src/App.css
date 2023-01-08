@@ -20,6 +20,9 @@ html {
 .header {
   grid-column: 1 / 3;
   grid-row: 1 / 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   color: rgb(255, 255, 255);
   position: relative;
   background: rgba(172, 99, 51, 0.856);
@@ -27,23 +30,22 @@ html {
 }
 
 .header h1 {
+  display: flex;
   letter-spacing: 2px;
   color: #fff;
   line-height: 24px;
-}
-
-.header span {
-  position: absolute;
-  top: 33%;
-  left: 45%;
+  align-content: center;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .header .transform {
-  position: absolute;
   transform: rotate(-90deg);
-  top: 33%;
-  left: 785px;
   font-size: small;
+}
+
+.transform {
+  margin-right: calc((0.6 - 1) * 22px);
 }
 
 .marksScreen {

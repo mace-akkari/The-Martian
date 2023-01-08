@@ -1,7 +1,9 @@
+import React from "react";
+
 const Footer = () => {
   return (
     <footer>
-      <p>Mace 2022 &reg; </p>
+      <p>Mace 2023 &reg; </p>
     </footer>
   );
 };

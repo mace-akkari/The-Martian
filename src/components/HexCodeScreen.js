@@ -1,3 +1,5 @@
+import React from "react";
+
 const HexCodeScreen = ({ hex, hexMessageHandler }) => {
   const handleDelete = (event) => {
     event.preventDefault();

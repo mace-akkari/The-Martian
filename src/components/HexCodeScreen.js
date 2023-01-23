@@ -7,16 +7,6 @@ const HexCodeScreen = ({ hex, hexMessageHandler }) => {
     hexMessageHandler(hex.slice(0, -1));
   };
 
-  // one way
-  // const handleDelete = (event) => {
-  //   let copyHex = hex.split("");
-  //   console.log("here", copyHex);
-  //   copyHex.pop();
-  //   event.preventDefault();
-  //   event.stopPropagation();
-  //   hexMessageHandler(copyHex.join(""));
-  // };
-
   const handleClear = (event) => {
     event.preventDefault();
     event.stopPropagation();

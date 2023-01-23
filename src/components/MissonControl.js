@@ -12,7 +12,6 @@ const MissonControl = ({ setHexMessage }) => {
   const handleDelete = (event) => {
     event.preventDefault();
     event.stopPropagation();
-    // document.getElementById("textArea").value = "";
     newRef.current.value = "";
   };
 
